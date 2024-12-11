@@ -51,7 +51,7 @@ dependencies {
     compileOnly("com.willfp:eco:6.74.2")
     compileOnly("com.willfp:libreforge:4.71.6:all@jar")
     compileOnly("com.ssomar:SCore:5.24.10.5")
-    compileOnly("com.nexomc:0.5.0-dev.12")
+    compileOnly("com.nexomc:nexo:0.5.0-dev.12")
     implementation("com.crypticlib:bukkit:${rootProject.findProperty("crypticlibVer")}")
     implementation("com.crypticlib:bukkit-ui:${rootProject.findProperty("crypticlibVer")}")
     implementation("com.crypticlib:bukkit-conversation:${rootProject.findProperty("crypticlibVer")}")
