@@ -28,3 +28,4 @@ public enum NexoHooker implements ItemPluginHooker {
     public ItemProvider itemProvider() {
         return NexoItemProvider.INSTANCE;
     }
+}
