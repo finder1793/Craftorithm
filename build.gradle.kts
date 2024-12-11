@@ -63,7 +63,7 @@ group = "com.github.yufiriamazenta"
 var pluginVersion: String = version.toString() + "-" + SimpleDateFormat("yyyyMMdd").format(System.currentTimeMillis())
 java.sourceCompatibility = JavaVersion.VERSION_21
 java.targetCompatibility = JavaVersion.VERSION_21
-
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 publishing {
     publications.create<MavenPublication>("maven") {
         from(components["java"])
