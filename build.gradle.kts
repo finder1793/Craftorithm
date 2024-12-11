@@ -27,6 +27,7 @@ repositories {
     maven("https://repo.auxilor.io/repository/maven-public/")
     //NBT-API
     maven("https://repo.codemc.io/repository/maven-public/")
+    maven("https://repo.nexomc.com/snapshots/")
     mavenCentral()
 }
 
@@ -50,6 +51,7 @@ dependencies {
     compileOnly("com.willfp:eco:6.74.2")
     compileOnly("com.willfp:libreforge:4.71.6:all@jar")
     compileOnly("com.ssomar:SCore:5.24.10.5")
+    compileOnly("com.nexomc:Nexo:0.5.0")
     implementation("com.crypticlib:bukkit:${rootProject.findProperty("crypticlibVer")}")
     implementation("com.crypticlib:bukkit-ui:${rootProject.findProperty("crypticlibVer")}")
     implementation("com.crypticlib:bukkit-conversation:${rootProject.findProperty("crypticlibVer")}")
