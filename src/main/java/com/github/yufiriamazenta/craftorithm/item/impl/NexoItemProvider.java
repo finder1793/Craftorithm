@@ -23,16 +23,16 @@ public enum NexoItemProvider implements ItemProvider {
             return null;
         String itemName = NexoItems.idFromItem(itemStack);
         if (ignoreAmount) {
-            return itemName;
+            return itemId;
         } else {
             ItemStack nexoItem = NexoItems.idFromItem(itemId).build();
-            return itemName + " " + (itemStack.getAmount() / nexoItem.getAmount());
+            return itemId + " " + (itemStack.getAmount() / nexoItem.getAmount());
         }
     }
 
     @Override
     public @Nullable ItemStack getItem(String itemName) {
-        if (!NexoItems.exists(itemName)) {
+        if (!NexoItems.exists(itemId)) {
             return null;
         }
         ItemStack built = NexoItems.idFromItem(itemId).build();
@@ -41,7 +41,7 @@ public enum NexoItemProvider implements ItemProvider {
 
     @Override
     public @Nullable ItemStack getItem(String itemName, OfflinePlayer player) {
-        return getItem(itemName);
+        return getItem(itemId);
     }
 
 }
