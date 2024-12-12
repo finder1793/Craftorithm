@@ -25,7 +25,7 @@ public enum NexoItemProvider implements ItemProvider {
         if (ignoreAmount) {
             return itemName;
         } else {
-            ItemStack nexoItem = NexoItems.itemFromId(itemName).build();
+            ItemStack nexoItem = NexoItems.idFromItem(itemName).build();
             return itemName + " " + (itemStack.getAmount() / nexoItem.getAmount());
         }
     }
