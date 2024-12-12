@@ -10,7 +10,7 @@ import crypticlib.lifecycle.TaskRule;
 @AutoTask(
     rules = @TaskRule(lifeCycle = LifeCycle.ENABLE)
 )
-public enum NexoHooker implements ItemPluginHooker {
+public enum NexoItemsHooker implements ItemPluginHooker {
 
     INSTANCE;
 
