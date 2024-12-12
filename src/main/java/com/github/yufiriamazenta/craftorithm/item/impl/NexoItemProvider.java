@@ -35,7 +35,7 @@ public enum NexoItemProvider implements ItemProvider {
         if (!NexoItems.exists(itemName)) {
             return null;
         }
-        ItemStack built = NexoItems.idFromItem(itemId).build();
+        ItemStack built = NexoItems.idFromItem(itemStack).build();
         return ItemUpdater.updateItem(built);
     }
 
