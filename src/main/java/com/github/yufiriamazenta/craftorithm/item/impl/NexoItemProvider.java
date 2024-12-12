@@ -32,7 +32,7 @@ public enum NexoItemProvider implements ItemProvider {
 
     @Override
     public @Nullable ItemStack getItem(String itemName) {
-        if (!NexoItems.exists(itemId)) {
+        if (!NexoItems.exists(itemName)) {
             return null;
         }
         ItemStack built = NexoItems.idFromItem(itemId).build();
@@ -41,7 +41,7 @@ public enum NexoItemProvider implements ItemProvider {
 
     @Override
     public @Nullable ItemStack getItem(String itemName, OfflinePlayer player) {
-        return getItem(itemId);
+        return getItem(itemName);
     }
 
 }
