@@ -2,7 +2,7 @@ package com.github.yufiriamazenta.craftorithm.item.impl;
 
 import com.github.yufiriamazenta.craftorithm.item.ItemProvider;
 import com.nexomc.nexo.api.NexoItems;
-import com.nexomc.nexo.items.ItemUpdater;
+import com.nexomc.nexo.items.itemBuilder;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
@@ -36,7 +36,7 @@ public enum NexoItemProvider implements ItemProvider {
             return null;
         }
         ItemStack built = NexoItems.itemFromId(itemName).build();
-        return ItemUpdater.updateItem(clone);
+        return ItemBuilder.build().(clone);
     }
 
     @Override
