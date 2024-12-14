@@ -2,7 +2,7 @@ package com.github.yufiriamazenta.craftorithm.item.impl;
 
 import com.github.yufiriamazenta.craftorithm.item.ItemProvider;
 import com.nexomc.nexo.api.NexoItems;
-import com.nexomc.nexo.items.itemBuilder;
+import com.nexomc.nexo.items.ItemBuilder;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
