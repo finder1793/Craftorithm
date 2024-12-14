@@ -36,7 +36,7 @@ public enum NexoItemProvider implements ItemProvider {
             return null;
         }
         ItemStack built = NexoItems.itemFromId(itemName).build();
-        return ItemBuilder.build().clone(newItem);
+        return ItemBuilder.build().clone(built);
     }
 
     @Override
